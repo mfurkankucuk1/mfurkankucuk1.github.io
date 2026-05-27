@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stocky — Gizlilik Politikası / Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fafaf7;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    .lang-switch a {
+      color: #b8553d;
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid #b8553d;
+      border-radius: 6px;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+    h1 { color: #b8553d; margin-top: 32px; font-size: 28px; }
+    h2 { color: #b8553d; margin-top: 32px; font-size: 20px; }
+    h3 { color: #1a1a1a; margin-top: 24px; font-size: 16px; }
+    a { color: #c56849; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 6px; }
+    .meta { color: #666; font-size: 14px; font-style: italic; }
+    .section { background: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a onclick="showLang('tr')">Türkçe</a>
+  <a onclick="showLang('en')">English</a>
+</div>
+
+<!-- ============================================================ -->
+<!-- TÜRKÇE -->
+<!-- ============================================================ -->
+<div id="tr" class="lang-section active">
+<div class="section">
+
+<h1>stocky Gizlilik Politikası</h1>
+<p class="meta">Son güncelleme: 27 Mayıs 2026 · Yürürlük: 27 Mayıs 2026</p>
+
+<p>Bu gizlilik politikası, <strong>stocky — Akıllı Kiler ve Beslenme Asistanı</strong> mobil uygulamasının (bundan sonra "stocky" veya "uygulama") kullanıcılarına ait kişisel verilerin nasıl toplandığını, kullanıldığını, paylaşıldığını ve korunduğunu açıklar.</p>
+
+<h2>1. Veri Sorumlusu</h2>
+<p><strong>Uygulama Sahibi:</strong> MFK Apps Studio<br>
+<strong>İletişim:</strong> <a href="mailto:mfurkankckk@gmail.com">mfurkankckk@gmail.com</a></p>
+
+<h2>2. Toplanan Veriler</h2>
+
+<h3>2.1 Otomatik Toplanan Veriler (sunucularımıza ulaşan)</h3>
+<ul>
+  <li><strong>Anonim cihaz tanımlayıcıları</strong> (Firebase Analytics anonim ID)</li>
+  <li><strong>Reklam tanımlayıcısı</strong> (Google Advertising ID — kullanıcı sıfırlayabilir)</li>
+  <li><strong>Çökme raporları</strong> (Firebase Crashlytics — hata oluştuğunda otomatik gönderilir)</li>
+  <li><strong>Anonim kullanım istatistikleri</strong> (hangi ekranların ziyaret edildiği, hangi özelliklerin kullanıldığı)</li>
+  <li><strong>Premium hak yönetimi için anonim Firebase Auth kimliği</strong> (cihazlar arası abonelik senkronizasyonu)</li>
+</ul>
+
+<h3>2.2 Cihazda Yerel Olarak İşlenen (Cihazdan Çıkmayan) Veriler</h3>
+<p>Kişisel ve sağlığa dair verileriniz <strong>cihazınızda kalır, sunucularımıza yüklenmez</strong>:</p>
+<ul>
+  <li><strong>Kiler / envanter:</strong> Eklediğiniz ürünler, miktarlar, son kullanma tarihleri, tüketim geçmişi — sadece cihazda.</li>
+  <li><strong>Sağlık profili:</strong> Boy, kilo, yaş, cinsiyet ve hedefler (kalori/makro hesabı için) — sadece cihazda.</li>
+  <li><strong>Diyet ve alerjen tercihleri:</strong> Sadece cihazda saklanır.</li>
+  <li><strong>Alışveriş listesi ve harcamalar:</strong> Sadece cihazda.</li>
+  <li><strong>Kamera ve OCR:</strong> Barkod tarama, beslenme etiketi ve fiş okuma Google ML Kit ile <em>tamamen cihaz üzerinde</em> çalışır. Çekilen kareler bellekte işlenir; <strong>fotoğraf olarak saklanmaz ve buluta gönderilmez</strong>.</li>
+</ul>
+
+<h3>2.3 Topluluk Ürün Veritabanı (Firestore)</h3>
+<p>stocky, Türkiye'deki ürün kapsamını büyütmek için <strong>topluluk-tabanlı bir ürün veritabanı</strong> kullanır. Bir barkodu taradığınızda veya bir ürünü manuel eklediğinizde, <strong>yalnızca ürüne ait bilgiler</strong> (barkod, ürün adı, marka, beslenme değerleri, alerjen etiketleri) ortak veritabanına katkı olarak gönderilebilir; böylece sonraki kullanıcılar aynı ürünü taradığında veri hazır bulunur.</p>
+<p>Bu katkı <strong>kişisel veri içermez</strong> — kim olduğunuzu belirten hiçbir bilgi (ad, e-posta, konum, sağlık verisi) gönderilmez; yalnızca ürün gerçekleri ve anonim bir katkı kimliği saklanır. Envanteriniz, sağlık verileriniz ve harcamalarınız bu veritabanına <strong>asla</strong> yüklenmez.</p>
+
+<h2>3. Verilerin Kullanım Amacı</h2>
+<ul>
+  <li>Uygulama işlevselliğinin sağlanması (envanter takibi, tüketim tahmini, sağlık panosu, premium abonelik yönetimi)</li>
+  <li>Barkodla ürün bilgisi getirme ve topluluk veritabanını zenginleştirme</li>
+  <li>Hata raporlama ve performans iyileştirme</li>
+  <li>Kişiselleştirilmiş reklam gösterimi (yalnızca ücretsiz kullanıcılar için, AdMob aracılığıyla)</li>
+  <li>Anonim kullanım istatistikleri (uygulama geliştirme amacıyla)</li>
+</ul>
+
+<h2>4. Üçüncü Taraf Hizmetler</h2>
+<ul>
+  <li><strong>Google Firebase</strong> (Analytics, Crashlytics, Auth, Firestore, Remote Config) — <a href="https://firebase.google.com/support/privacy" target="_blank">Gizlilik politikası</a></li>
+  <li><strong>Google AdMob</strong> (banner, geçiş ve ödüllü reklamlar) — <a href="https://policies.google.com/technologies/ads" target="_blank">Gizlilik politikası</a></li>
+  <li><strong>Google Play Billing</strong> (premium abonelik işlemleri) — <a href="https://policies.google.com/privacy" target="_blank">Gizlilik politikası</a></li>
+  <li><strong>Google ML Kit</strong> (cihaz üzerinde barkod + OCR, hiçbir veri buluta gitmez) — <a href="https://developers.google.com/ml-kit/terms" target="_blank">Şartlar</a></li>
+  <li><strong>Open Food Facts</strong> (barkodla ürün/beslenme bilgisi sorgulama) — <a href="https://world.openfoodfacts.org/privacy" target="_blank">Gizlilik politikası</a></li>
+  <li><strong>FatSecret Platform API</strong> (yedek beslenme bilgisi sorgulama) — <a href="https://platform.fatsecret.com/api/Default.aspx?screen=rapih" target="_blank">Şartlar</a></li>
+</ul>
+<p>Barkod sorgularında ilgili barkod numarası ürün bilgisini getirmek için bu beslenme servislerine gönderilir; kişisel bilgilerinizle ilişkilendirilmez.</p>
+
+<h2>5. Reklamlar</h2>
+<p>stocky ücretsiz sürümünde Google AdMob aracılığıyla reklamlar gösterir. Bu reklamlar, kullanıcının ilgi alanlarına göre kişiselleştirilebilir. Reklam kişiselleştirmesini cihaz ayarlarınızdan kapatabilirsiniz: <em>Ayarlar → Google → Reklamlar → Reklam kimliğini sıfırla</em>.</p>
+<p>Premium abonelik satın alarak <strong>tüm reklamları</strong> kaldırabilirsiniz.</p>
+
+<h2>6. İzinler</h2>
+<ul>
+  <li><strong>Kamera:</strong> Barkod, beslenme etiketi ve fiş tarama için. Görüntü cihazda işlenir, saklanmaz.</li>
+  <li><strong>Bildirimler:</strong> Son kullanma tarihi ve "yakında bitecek" hatırlatıcıları için.</li>
+  <li><strong>İnternet:</strong> Ürün bilgisi sorgulama, premium doğrulama, reklam ve topluluk veritabanı senkronizasyonu için.</li>
+</ul>
+
+<h2>7. Veri Güvenliği</h2>
+<ul>
+  <li>Tüm internet trafiği <strong>HTTPS/TLS</strong> ile şifrelenir</li>
+  <li>Sağlık, envanter ve harcama verileriniz cihazınızdan dışarı çıkmaz</li>
+  <li>Topluluk veritabanına gönderilen ürün bilgileri <strong>kişisel veri içermez</strong></li>
+  <li>Premium ödemeleri Google Play tarafından işlenir; <strong>kart bilgileri stocky'ye ulaşmaz</strong></li>
+  <li>Anonim analytics verileri <strong>14 ay</strong> içinde otomatik olarak silinir (Firebase Analytics retention policy)</li>
+</ul>
+
+<h2>8. Kullanıcı Hakları (KVKK / GDPR)</h2>
+<p>KVKK Madde 11 ve GDPR Madde 15-22 kapsamında aşağıdaki haklara sahipsiniz:</p>
+<ul>
+  <li>Verilerinizin işlenip işlenmediğini öğrenme hakkı</li>
+  <li>Verilerinize erişim hakkı</li>
+  <li>Verilerin düzeltilmesini, silinmesini veya işlenmesinin kısıtlanmasını isteme hakkı</li>
+  <li>Otomatik karar verme süreçlerine itiraz etme hakkı</li>
+  <li>Veri taşınabilirliği hakkı</li>
+</ul>
+<p>Kişisel verileriniz cihazınızda saklandığı için, uygulamayı kaldırarak ya da cihaz uygulama ayarlarından verileri temizleyerek kalıcı olarak silebilirsiniz. Anonim analytics verileri için silme talebinde bulunmak isterseniz lütfen <a href="mailto:mfurkankckk@gmail.com">mfurkankckk@gmail.com</a> adresinden iletişime geçin.</p>
+
+<h2>9. Çocukların Gizliliği</h2>
+<p>stocky 13 yaşın altındaki kullanıcılardan bilerek veri toplamamaktadır. Eğer 13 yaşın altındaysanız, lütfen uygulamayı kullanmayın.</p>
+
+<h2>10. Değişiklikler</h2>
+<p>Bu gizlilik politikasında değişiklik yapma hakkını saklı tutarız. Önemli değişiklikler uygulama içi bildirimle duyurulur. En güncel sürüm her zaman bu sayfada yayınlanır.</p>
+
+<h2>11. İletişim</h2>
+<p>Sorularınız için: <a href="mailto:mfurkankckk@gmail.com">mfurkankckk@gmail.com</a></p>
+
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- ENGLISH -->
+<!-- ============================================================ -->
+<div id="en" class="lang-section">
+<div class="section">
+
+<h1>stocky Privacy Policy</h1>
+<p class="meta">Last updated: May 27, 2026 · Effective: May 27, 2026</p>
+
+<p>This privacy policy explains how the mobile application <strong>stocky — Smart Pantry & Nutrition Assistant</strong> (hereinafter "stocky" or "the app") collects, uses, shares, and protects personal data belonging to its users.</p>
+
+<h2>1. Data Controller</h2>
+<p><strong>App Owner:</strong> MFK Apps Studio<br>
+<strong>Contact:</strong> <a href="mailto:mfurkankckk@gmail.com">mfurkankckk@gmail.com</a></p>
+
+<h2>2. Data Collected</h2>
+
+<h3>2.1 Automatically Collected Data (sent to our servers)</h3>
+<ul>
+  <li><strong>Anonymous device identifiers</strong> (Firebase Analytics anonymous ID)</li>
+  <li><strong>Advertising identifier</strong> (Google Advertising ID — user-resettable)</li>
+  <li><strong>Crash reports</strong> (Firebase Crashlytics — sent automatically when an error occurs)</li>
+  <li><strong>Anonymous usage statistics</strong> (which screens are visited, which features are used)</li>
+  <li><strong>Anonymous Firebase Auth ID for premium entitlement management</strong> (cross-device subscription sync)</li>
+</ul>
+
+<h3>2.2 Data Processed Locally (Never Leaves the Device)</h3>
+<p>Your personal and health-related data <strong>stays on your device and is not uploaded to our servers</strong>:</p>
+<ul>
+  <li><strong>Pantry / inventory:</strong> Products you add, quantities, expiry dates, consumption history — on device only.</li>
+  <li><strong>Health profile:</strong> Height, weight, age, gender, and goals (for calorie/macro calculation) — on device only.</li>
+  <li><strong>Diet and allergen preferences:</strong> Stored on device only.</li>
+  <li><strong>Shopping list and expenses:</strong> On device only.</li>
+  <li><strong>Camera and OCR:</strong> Barcode scanning, nutrition-label and receipt reading run <em>entirely on-device</em> via Google ML Kit. Captured frames are processed in memory; <strong>no photo is stored or uploaded to the cloud</strong>.</li>
+</ul>
+
+<h3>2.3 Community Product Database (Firestore)</h3>
+<p>stocky uses a <strong>community-based product database</strong> to expand product coverage in Turkey. When you scan a barcode or add a product manually, <strong>only product information</strong> (barcode, product name, brand, nutrition values, allergen tags) may be contributed to the shared database so that the next user who scans the same product finds the data ready.</p>
+<p>This contribution <strong>contains no personal data</strong> — no information identifying you (name, email, location, health data) is sent; only product facts and an anonymous contributor ID are stored. Your inventory, health data, and expenses are <strong>never</strong> uploaded to this database.</p>
+
+<h2>3. Purpose of Use</h2>
+<ul>
+  <li>Providing app functionality (inventory tracking, depletion prediction, health dashboard, premium subscription management)</li>
+  <li>Fetching product info by barcode and enriching the community database</li>
+  <li>Crash reporting and performance improvement</li>
+  <li>Personalized ad display (free users only, via AdMob)</li>
+  <li>Anonymous usage statistics for product development</li>
+</ul>
+
+<h2>4. Third-Party Services</h2>
+<ul>
+  <li><strong>Google Firebase</strong> (Analytics, Crashlytics, Auth, Firestore, Remote Config) — <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy policy</a></li>
+  <li><strong>Google AdMob</strong> (banner, interstitial, rewarded ads) — <a href="https://policies.google.com/technologies/ads" target="_blank">Privacy policy</a></li>
+  <li><strong>Google Play Billing</strong> (premium subscription) — <a href="https://policies.google.com/privacy" target="_blank">Privacy policy</a></li>
+  <li><strong>Google ML Kit</strong> (on-device barcode + OCR, no data sent to cloud) — <a href="https://developers.google.com/ml-kit/terms" target="_blank">Terms</a></li>
+  <li><strong>Open Food Facts</strong> (product/nutrition lookup by barcode) — <a href="https://world.openfoodfacts.org/privacy" target="_blank">Privacy policy</a></li>
+  <li><strong>FatSecret Platform API</strong> (fallback nutrition lookup) — <a href="https://platform.fatsecret.com/api/Default.aspx?screen=rapih" target="_blank">Terms</a></li>
+</ul>
+<p>For barcode lookups, the barcode number is sent to these nutrition services to retrieve product information; it is not linked to your personal information.</p>
+
+<h2>5. Advertising</h2>
+<p>The free tier of stocky shows ads via Google AdMob. These ads may be personalized based on user interests. You can disable personalization in your device settings: <em>Settings → Google → Ads → Reset advertising ID</em>.</p>
+<p>By purchasing a Premium subscription you can <strong>remove all ads</strong>.</p>
+
+<h2>6. Permissions</h2>
+<ul>
+  <li><strong>Camera:</strong> Barcode, nutrition-label and receipt scanning. Image is processed on device, not stored.</li>
+  <li><strong>Notifications:</strong> Expiry and "running out soon" reminders.</li>
+  <li><strong>Internet:</strong> Product lookup, premium verification, ads, and community database sync.</li>
+</ul>
+
+<h2>7. Data Security</h2>
+<ul>
+  <li>All internet traffic is encrypted with <strong>HTTPS/TLS</strong></li>
+  <li>Your health, inventory, and expense data never leaves your device</li>
+  <li>Product info contributed to the community database <strong>contains no personal data</strong></li>
+  <li>Premium payments are handled by Google Play; <strong>no card data reaches stocky</strong></li>
+  <li>Anonymous analytics data is auto-deleted after <strong>14 months</strong> (Firebase Analytics retention policy)</li>
+</ul>
+
+<h2>8. User Rights (KVKK / GDPR)</h2>
+<p>Under KVKK Article 11 and GDPR Articles 15–22, you have the right to:</p>
+<ul>
+  <li>Know whether your data is being processed</li>
+  <li>Access your data</li>
+  <li>Request correction, deletion, or restriction of processing</li>
+  <li>Object to automated decision-making</li>
+  <li>Data portability</li>
+</ul>
+<p>Since your personal data is stored on your device, you can permanently delete it by uninstalling the app or clearing the app's data in your device settings. For deletion requests regarding anonymous analytics data, please contact <a href="mailto:mfurkankckk@gmail.com">mfurkankckk@gmail.com</a>.</p>
+
+<h2>9. Children's Privacy</h2>
+<p>stocky does not knowingly collect data from users under 13. If you are under 13, please do not use the app.</p>
+
+<h2>10. Changes</h2>
+<p>We reserve the right to modify this privacy policy. Material changes will be announced via in-app notification. The current version is always published on this page.</p>
+
+<h2>11. Contact</h2>
+<p>For questions: <a href="mailto:mfurkankckk@gmail.com">mfurkankckk@gmail.com</a></p>
+
+</div>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>
