@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OldSchool — Gizlilik ve Veri Politikası</title>
+  <meta name="description" content="OldSchool — İlaç ve Takviye Hatırlatıcısı gizlilik ve veri politikası.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #ecfdf5 0%, #ffffff 60%);
+      color: #1f2937; min-height: 100vh; line-height: 1.7;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 60px; }
+    .back { display: inline-block; margin-bottom: 28px; color: #047857; text-decoration: none; font-weight: 600; font-size: 14px; }
+    .back:hover { text-decoration: underline; }
+    h1 { font-size: 32px; font-weight: 800; color: #064e3b; margin-bottom: 6px; }
+    .meta { color: #6b7280; font-size: 14px; margin-bottom: 8px; }
+    .lang-sep { border: none; border-top: 1px solid #d1fae5; margin: 48px 0; }
+    h2 { font-size: 22px; font-weight: 700; color: #064e3b; margin: 36px 0 10px; }
+    h3 { font-size: 17px; font-weight: 700; color: #047857; margin: 22px 0 8px; }
+    p { color: #374151; margin-bottom: 12px; }
+    ul { margin: 0 0 12px 22px; color: #374151; }
+    li { margin-bottom: 6px; }
+    blockquote { border-left: 3px solid #34d399; background: #f0fdf4; padding: 10px 16px; margin: 0 0 12px; color: #065f46; border-radius: 0 8px 8px 0; }
+    code { background: #ecfdf5; padding: 1px 6px; border-radius: 5px; font-size: 14px; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280; }
+    footer a { color: #047857; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="./index.html">← MFK Apps Studio</a>
+
+    <!-- ================= TÜRKÇE ================= -->
+    <h1>OldSchool Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 8 Haziran 2026 · Yürürlük: 8 Haziran 2026</p>
+    <p>Bu gizlilik politikası, <strong>OldSchool — İlaç ve Takviye Hatırlatıcısı</strong> mobil uygulamasının kullanıcılarına ait kişisel verilerin nasıl toplandığını, kullanıldığını, paylaşıldığını ve korunduğunu açıklar.</p>
+
+    <h2>1. Veri Sorumlusu</h2>
+    <ul>
+      <li><strong>Uygulama Sahibi:</strong> MFK Apps Studio</li>
+      <li><strong>İletişim:</strong> appsmfk@gmail.com</li>
+    </ul>
+
+    <h2>2. Toplanan Veriler</h2>
+    <h3>2.1 Cihazda Yerel Olarak İşlenen Veriler (cihazınızdan asla çıkmaz)</h3>
+    <ul>
+      <li>Profil bilgileri: ad, soyad, doğum tarihi, cinsiyet (tümü opsiyonel)</li>
+      <li>Eklediğiniz ilaçlar ve takviyeler (ad, doz, kullanım sıklığı, saatler, stok)</li>
+      <li>Doz geçmişi (alındı/atlandı kayıtları)</li>
+      <li>İsteğe bağlı ilaç fotoğrafları (Pro özelliği)</li>
+      <li>Uygulama ayarları ve hatırlatıcı tercihleri</li>
+    </ul>
+    <p>Bu verilerin tamamı cihazınızdaki yerel veritabanında (SQLite/drift) saklanır. Sunucularımıza gönderilmez, üçüncü taraflara aktarılmaz. Hesap oluşturmanız gerekmez.</p>
+    <h3>2.2 Otomatik Toplanan Veriler</h3>
+    <ul>
+      <li><strong>Çökme raporları (Firebase Crashlytics):</strong> Sürüm derlemelerinde kritik bir hata oluşursa anonim çökme raporu iletilir. Bu rapor cihaz modeli, işletim sistemi sürümü ve hata izini içerir; sağlık veya kişisel verilerinizi içermez.</li>
+      <li><strong>Reklam tanımlayıcısı (Google Advertising ID):</strong> Ücretsiz katmanda reklam gösterimi için AdMob tarafından kullanılabilir; kullanıcı tarafından sıfırlanabilir.</li>
+    </ul>
+    <blockquote>Not: OldSchool ayrı bir kullanım analitiği (Firebase Analytics vb.) toplamaz; yalnızca çökme raporlama kullanılır.</blockquote>
+
+    <h2>3. Verilerin Kullanım Amacı</h2>
+    <ul>
+      <li>İlaç ve takviye hatırlatıcılarının zamanında gösterilmesi</li>
+      <li>Uygulama işlevselliğinin sağlanması</li>
+      <li>Çökme raporlama ve kararlılık iyileştirmesi</li>
+      <li>Reklam gösterimi (yalnızca ücretsiz katman)</li>
+      <li>Pro satın alımının doğrulanması</li>
+    </ul>
+
+    <h2>4. Üçüncü Taraf Hizmetler</h2>
+    <ul>
+      <li>Google Firebase (Crashlytics — çökme raporlama)</li>
+      <li>Google AdMob (banner, native ve ödüllü reklamlar — ücretsiz katman)</li>
+      <li>Google Play Billing / Apple App Store (Pro satın alımı)</li>
+    </ul>
+    <p>Başka hiçbir üçüncü taraf analitik, sosyal SDK veya reklam atıf hizmeti kullanılmamaktadır.</p>
+
+    <h2>5. Reklamlar ve Onay</h2>
+    <p>Ücretsiz katmanda Google AdMob aracılığıyla reklamlar gösterilir. AdMob, kişiselleştirilmiş reklam için cihaz reklam kimliğini kullanabilir. Kişiselleştirmeyi cihaz ayarlarından kapatabilir veya reklam kimliğini sıfırlayabilirsiniz. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılara gerekli olduğunda onay ekranı sunulur. Pro yükseltmesi tüm reklamları kaldırır. Ödüllü reklamlar tamamen isteğe bağlıdır.</p>
+
+    <h2>6. İzinler</h2>
+    <ul>
+      <li><strong>Bildirimler:</strong> Doz hatırlatmaları için (zorunlu)</li>
+      <li><strong>Tam-zamanlı alarm (Exact Alarm):</strong> Hatırlatmaların doğru saatte gelmesi için</li>
+      <li><strong>Yeniden başlatma sonrası (Boot Completed):</strong> Cihaz kapanıp açıldığında alarmların yeniden kurulması için</li>
+      <li><strong>Tam ekran bildirim (Full-Screen Intent):</strong> Kritik ilaç hatırlatmaları için</li>
+      <li><strong>Pil optimizasyonu muafiyeti (yalnız Android):</strong> Arka plan kısıtlamalarına karşı bildirim güvenilirliği için</li>
+      <li><strong>Titreşim / Wake Lock:</strong> Bildirim ses ve titreşimi için</li>
+      <li><strong>Kamera (Pro, opsiyonel):</strong> İlaç fotoğrafı çekmek için — görüntü cihazda kalır</li>
+      <li><strong>İnternet:</strong> Reklam, çökme raporlama ve Pro doğrulaması için</li>
+    </ul>
+
+    <h2>7. Veri Güvenliği</h2>
+    <ul>
+      <li>Tüm internet trafiği HTTPS/TLS ile şifrelenir</li>
+      <li>İlaç, profil, doz geçmişi ve fotoğraflar cihazdan çıkmaz</li>
+      <li>Kart bilgileri OldSchool'a ulaşmaz; ödemeleri Google Play / App Store yönetir</li>
+      <li>Çökme raporları anonimdir ve kişisel veri içermez</li>
+    </ul>
+
+    <h2>8. Kullanıcı Hakları (KVKK / GDPR)</h2>
+    <p>KVKK Madde 11 ve GDPR Madde 15–22 kapsamında aşağıdaki haklara sahipsiniz:</p>
+    <ul>
+      <li>Verilerinizin işlenip işlenmediğini öğrenme</li>
+      <li>Verilerinize erişim</li>
+      <li>Düzeltilme, silinme veya işlenmesinin kısıtlanması</li>
+      <li>Otomatik karar vermeye itiraz</li>
+      <li>Veri taşınabilirliği</li>
+    </ul>
+    <p>Verileriniz cihazınızda saklandığından doğrudan kontrol sizdedir.</p>
+
+    <h2>9. Verilerin Silinmesi</h2>
+    <p>Tüm OldSchool verilerinizi <strong>Ayarlar → Veri → "Tüm verileri sil"</strong> ile silebilirsiniz. Uygulamayı cihazdan kaldırmak da aynı sonucu verir.</p>
+
+    <h2>10. Çocukların Gizliliği</h2>
+    <p>OldSchool 13 yaş altı kullanım için tasarlanmamıştır. 13 yaş altı çocukların kullanımı veli sorumluluğundadır. 13 yaşın altındaki kullanıcılardan bilerek veri toplanmaz.</p>
+
+    <h2>11. Sağlık Verisi Hakkında</h2>
+    <p>OldSchool tıbbi bir cihaz değildir ve tıbbi tavsiye vermez. Yalnızca ilaç ve takviyelerinizi hatırlamanıza yardımcı olur. Ayrıntı için Kullanım Şartları / Tıbbi Sorumluluk Reddi belgesine bakın.</p>
+
+    <h2>12. Değişiklikler</h2>
+    <p>Bu politika zaman zaman güncellenebilir. Önemli değişiklikler uygulama içi bildirimle duyurulur; güncel sürüm her zaman uygulama içinde ve bu sayfada yayınlanır.</p>
+
+    <h2>13. İletişim</h2>
+    <p>Sorularınız için: appsmfk@gmail.com</p>
+
+    <hr class="lang-sep">
+
+    <!-- ================= ENGLISH ================= -->
+    <h1>OldSchool Privacy Policy</h1>
+    <p class="meta">Last updated: June 8, 2026 · Effective: June 8, 2026</p>
+    <p>This privacy policy explains how <strong>OldSchool — Medication &amp; Supplement Reminder</strong> collects, uses, shares, and protects user personal data.</p>
+
+    <h2>1. Data Controller</h2>
+    <ul>
+      <li><strong>App Owner:</strong> MFK Apps Studio</li>
+      <li><strong>Contact:</strong> appsmfk@gmail.com</li>
+    </ul>
+
+    <h2>2. Data Collected</h2>
+    <h3>2.1 Data Processed Locally (Never Leaves Your Device)</h3>
+    <ul>
+      <li>Profile information: first name, last name, date of birth, gender (all optional)</li>
+      <li>Medications and supplements you add (name, dose, frequency, times, stock)</li>
+      <li>Dose history (taken/skipped records)</li>
+      <li>Optional medication photos (Pro feature)</li>
+      <li>App settings and reminder preferences</li>
+    </ul>
+    <p>All of this data is stored in a local database (SQLite/drift) on your device. It is not sent to our servers and is not shared with third parties. No account is required.</p>
+    <h3>2.2 Automatically Collected Data</h3>
+    <ul>
+      <li><strong>Crash reports (Firebase Crashlytics):</strong> In release builds, if a critical error occurs, an anonymous crash report is sent. It contains device model, OS version, and a stack trace; it does not contain your health or personal data.</li>
+      <li><strong>Advertising identifier (Google Advertising ID):</strong> May be used by AdMob for ad display in the free tier; user-resettable.</li>
+    </ul>
+    <blockquote>Note: OldSchool does not collect separate usage analytics (e.g. Firebase Analytics); only crash reporting is used.</blockquote>
+
+    <h2>3. Purpose of Use</h2>
+    <ul>
+      <li>Delivering medication and supplement reminders on time</li>
+      <li>Providing app functionality</li>
+      <li>Crash reporting and stability improvement</li>
+      <li>Ad display (free tier only)</li>
+      <li>Verifying Pro purchase</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <ul>
+      <li>Google Firebase (Crashlytics — crash reporting)</li>
+      <li>Google AdMob (banner, native, and rewarded ads — free tier)</li>
+      <li>Google Play Billing / Apple App Store (Pro purchase)</li>
+    </ul>
+    <p>No other third-party analytics, social SDKs, or ad-attribution services are used.</p>
+
+    <h2>5. Advertising &amp; Consent</h2>
+    <p>The free tier shows ads via Google AdMob. AdMob may use the device advertising ID for personalized ads. You can disable personalization in device settings or reset the advertising ID. Users in the EEA, UK, and Switzerland are presented a consent screen where required. The Pro upgrade removes all ads. Rewarded ads are fully optional.</p>
+
+    <h2>6. Permissions</h2>
+    <ul>
+      <li><strong>Notifications:</strong> For dose reminders (required)</li>
+      <li><strong>Exact Alarm:</strong> So reminders arrive at the right time</li>
+      <li><strong>Boot Completed:</strong> To re-schedule alarms after the device restarts</li>
+      <li><strong>Full-Screen Intent:</strong> For critical medication reminders</li>
+      <li><strong>Battery optimization exemption (Android only):</strong> For reliable background delivery</li>
+      <li><strong>Vibration / Wake Lock:</strong> For notification sound and vibration</li>
+      <li><strong>Camera (Pro, optional):</strong> To take a medication photo — image stays on device</li>
+      <li><strong>Internet:</strong> For ads, crash reporting, and Pro verification</li>
+    </ul>
+
+    <h2>7. Data Security</h2>
+    <ul>
+      <li>All internet traffic encrypted with HTTPS/TLS</li>
+      <li>Medication, profile, dose history, and photos never leave your device</li>
+      <li>Card data never reaches OldSchool; payments are handled by Google Play / App Store</li>
+      <li>Crash reports are anonymous and contain no personal data</li>
+    </ul>
+
+    <h2>8. User Rights (KVKK / GDPR)</h2>
+    <p>Under KVKK Article 11 and GDPR Articles 15–22 you have the right to:</p>
+    <ul>
+      <li>Know whether your data is processed</li>
+      <li>Access your data</li>
+      <li>Request correction, deletion, or restriction of processing</li>
+      <li>Object to automated decision-making</li>
+      <li>Data portability</li>
+    </ul>
+    <p>Because your data is stored on your device, you remain in direct control.</p>
+
+    <h2>9. Data Deletion</h2>
+    <p>You can delete all OldSchool data via <strong>Settings → Data → "Delete all data."</strong> Uninstalling the app has the same effect.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>OldSchool is not designed for use by children under 13. Use by children under 13 is the responsibility of a parent/guardian. We do not knowingly collect data from users under 13.</p>
+
+    <h2>11. About Health Data</h2>
+    <p>OldSchool is not a medical device and does not provide medical advice. It only helps you remember your medications and supplements. See the Terms of Service / Medical Disclaimer for details.</p>
+
+    <h2>12. Changes</h2>
+    <p>This policy may be updated from time to time. Material changes are announced via in-app notification; the current version is always available in the app and on this page.</p>
+
+    <h2>13. Contact</h2>
+    <p>For questions: appsmfk@gmail.com</p>
+
+    <footer>
+      <p>İletişim / Contact: <a href="mailto:appsmfk@gmail.com">appsmfk@gmail.com</a></p>
+      <p style="margin-top: 8px;">© 2026 MFK Apps Studio</p>
+    </footer>
+  </div>
+</body>
+</html>
