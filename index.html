@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MFK Apps Studio</title>
-  <meta name="description" content="MFK Apps Studio — bağımsız mobil uygulama stüdyosu. Word Lounge, Granyn ve diğer projelerimiz.">
+  <meta name="description" content="MFK Apps Studio — independent mobile app studio. Leaflet, Word Lounge, Granyn and our other projects.">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -14,7 +14,17 @@
       min-height: 100vh;
       line-height: 1.6;
     }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 80px 24px 60px; }
+    .lang-switch {
+      max-width: 720px; margin: 0 auto; padding: 20px 24px 0;
+      text-align: right; font-size: 14px;
+    }
+    .lang-switch a {
+      display: inline-block; margin-left: 8px; margin-bottom: 8px;
+      color: #047857; text-decoration: none; font-weight: 600;
+      padding: 6px 12px; border: 1px solid #047857; border-radius: 6px; cursor: pointer;
+    }
+    .lang-switch a:hover { background: #047857; color: #ffffff; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 60px; }
     header { text-align: center; margin-bottom: 56px; }
     .logo {
       width: 96px; height: 96px; border-radius: 24px;
@@ -46,9 +56,119 @@
       font-size: 14px; color: #6b7280;
     }
     footer a { color: #047857; text-decoration: none; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
   </style>
 </head>
 <body>
+
+<div class="lang-switch">
+  <a onclick="showLang('en')">English</a>
+  <a onclick="showLang('tr')">Türkçe</a>
+  <a onclick="showLang('es')">Español</a>
+  <a onclick="showLang('de')">Deutsch</a>
+  <a onclick="showLang('fr')">Français</a>
+</div>
+
+<div id="en" class="lang-section active">
+  <div class="wrap">
+    <header>
+      <div class="logo">M</div>
+      <h1>MFK Apps Studio</h1>
+      <p class="tagline">Independent mobile app studio</p>
+    </header>
+
+    <section>
+      <h2>Our Apps</h2>
+
+      <div class="app-card">
+        <h3>Leaflet — Calm Plant Care</h3>
+        <p>A privacy-first, calm plant care app. Add your plants, set watering and fertilizing intervals, get reminders right on time, and keep notes and photos. No account — all your plant data stays on your device.</p>
+        <div class="links">
+        <a href="./leaflet-privacy.html">Privacy Policy</a>
+        <a href="./leaflet-terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Word Lounge — Multilingual Vocabulary & Grammar Learning</h3>
+        <p>Learn vocabulary and grammar across Turkish, English, German, Spanish, French, and Russian. Flashcards, quizzes, grammar tests, games, listening, and challenge a friend. Most features work offline and your data stays on your device.</p>
+        <div class="links">
+        <a href="./wordlounge-privacy.html">Privacy Policy</a>
+        <a href="./wordlounge-terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Mintly — Calm Pomodoro Timer</h3>
+        <p>A calm Pomodoro timer and daily ritual app for those who want to focus without hustle aesthetics. No streak pressure, no servers. On iOS and Android, your data stays entirely on your device.</p>
+        <div class="links">
+        <a href="./mintly-privacy.html">Privacy Policy</a>
+        <a href="./mintly-terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>OldSchool — Medication & Supplement Reminder</h3>
+        <p>A simple medication and supplement reminder. Reliable notifications at dose times, dose history, and optional medication photos. All your health data stays only on your device — no account.</p>
+        <div class="links">
+        <a href="./oldschool-privacy.html">Privacy Policy</a>
+        <a href="./oldschool-terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Subly — Subscription Tracking</h3>
+        <p>A privacy-first subscription tracker. Point your camera at a bill and the subscription details are filled in automatically — no bank linking, multi-currency. Your data stays on your device.</p>
+        <div class="links">
+        <a href="./subly-privacy.html">Privacy Policy</a>
+        <a href="./subly-terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Hydrame — Smart Water Tracking</h3>
+        <p>A science-based, smartly scheduled, privacy-first water tracking app. A clear hydration score, smart reminders, and an animated fluid interface. Your data stays on your device.</p>
+        <div class="links">
+        <a href="./hydrame-privacy.html">Privacy Policy</a>
+        <a href="./hydrame-terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Granyn — Smart Budget & Expense Tracking</h3>
+        <p>A personal finance app. Take control of your budget with receipt scanning, automatic categories, goals, and analytics dashboards. Your data stays on your device.</p>
+        <div class="links">
+        <a href="./granyn-privacy.html">Privacy Policy</a>
+        <a href="./granyn-terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Verdyn</h3>
+        <p>A productivity and daily tracking app.</p>
+        <div class="links">
+        <a href="./verdyn-privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>stocky — Smart Pantry & Nutrition Assistant</h3>
+        <p>A smart home inventory built for Turkey. Scan barcodes to score products, predict when they'll run out, and track your nutrition and health. Your personal data stays on your device.</p>
+        <div class="links">
+        <a href="./stocky-privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Contact: <a href="mailto:appsmfk@gmail.com">appsmfk@gmail.com</a></p>
+      <p style="margin-top: 8px;">© 2026 MFK Apps Studio</p>
+    </footer>
+  </div>
+</div>
+
+<div id="tr" class="lang-section">
   <div class="wrap">
     <header>
       <div class="logo">M</div>
@@ -60,11 +180,20 @@
       <h2>Uygulamalarımız</h2>
 
       <div class="app-card">
+        <h3>Leaflet — Sakin Bitki Bakımı</h3>
+        <p>Gizlilik öncelikli, sakin bir bitki bakım uygulaması. Bitkilerini ekle, sulama ve gübreleme aralıklarını belirle, tam zamanında hatırlatma al; notlar ve fotoğraflar tut. Hesap yok, tüm bitki verilerin cihazında kalır.</p>
+        <div class="links">
+        <a href="./leaflet-privacy.html">Gizlilik Politikası</a>
+        <a href="./leaflet-terms.html">Kullanım Şartları</a>
+        </div>
+      </div>
+
+      <div class="app-card">
         <h3>Word Lounge — Çok Dilli Kelime ve Gramer Öğrenme</h3>
         <p>Türkçe, İngilizce, Almanca, İspanyolca, Fransızca ve Rusça arasında kelime ve gramer öğren. Flashcard, sınav, gramer testleri, oyunlar, dinleme ve arkadaşla yarış. Çoğu özellik internetsiz çalışır, verilerin cihazında kalır.</p>
         <div class="links">
-          <a href="./wordlounge-privacy.html">Gizlilik Politikası</a>
-          <a href="./wordlounge-terms.html">Kullanım Şartları</a>
+        <a href="./wordlounge-privacy.html">Gizlilik Politikası</a>
+        <a href="./wordlounge-terms.html">Kullanım Şartları</a>
         </div>
       </div>
 
@@ -72,8 +201,8 @@
         <h3>Mintly — Sakin Pomodoro Zamanlayıcı</h3>
         <p>Hustle estetiği olmadan odaklanmak isteyenler için sakin Pomodoro zamanlayıcı ve günlük ritüel uygulaması. Streak baskısı yok, sunucu yok. iOS ve Android'de, verilerin tamamen cihazında kalır.</p>
         <div class="links">
-          <a href="./mintly-privacy.html">Gizlilik Politikası</a>
-          <a href="./mintly-terms.html">Kullanım Şartları</a>
+        <a href="./mintly-privacy.html">Gizlilik Politikası</a>
+        <a href="./mintly-terms.html">Kullanım Şartları</a>
         </div>
       </div>
 
@@ -81,8 +210,8 @@
         <h3>OldSchool — İlaç ve Takviye Hatırlatıcısı</h3>
         <p>Sade ilaç ve takviye hatırlatıcısı. Doz saatlerinde güvenilir bildirimler, doz geçmişi ve isteğe bağlı ilaç fotoğrafı. Tüm sağlık verilerin yalnızca cihazında kalır — hesap yok.</p>
         <div class="links">
-          <a href="./oldschool-privacy.html">Gizlilik Politikası</a>
-          <a href="./oldschool-terms.html">Kullanım Şartları</a>
+        <a href="./oldschool-privacy.html">Gizlilik Politikası</a>
+        <a href="./oldschool-terms.html">Kullanım Şartları</a>
         </div>
       </div>
 
@@ -90,8 +219,8 @@
         <h3>Subly — Abonelik Takibi</h3>
         <p>Gizlilik öncelikli abonelik takipçisi. Faturayı kameraya tut, abonelik bilgileri otomatik çıksın — banka bağlama yok, çoklu para birimi. Verilerin cihazında kalır.</p>
         <div class="links">
-          <a href="./subly-privacy.html">Gizlilik Politikası</a>
-          <a href="./subly-terms.html">Kullanım Şartları</a>
+        <a href="./subly-privacy.html">Gizlilik Politikası</a>
+        <a href="./subly-terms.html">Kullanım Şartları</a>
         </div>
       </div>
 
@@ -99,8 +228,8 @@
         <h3>Hydrame — Akıllı Su Takibi</h3>
         <p>Bilime dayalı, akıllı zamanlamalı, gizlilik öncelikli su takip uygulaması. Net hidrasyon skoru, akıllı hatırlatmalar ve animasyonlu sıvı arayüz. Verilerin cihazında kalır.</p>
         <div class="links">
-          <a href="./hydrame-privacy.html">Gizlilik Politikası</a>
-          <a href="./hydrame-terms.html">Kullanım Şartları</a>
+        <a href="./hydrame-privacy.html">Gizlilik Politikası</a>
+        <a href="./hydrame-terms.html">Kullanım Şartları</a>
         </div>
       </div>
 
@@ -108,8 +237,8 @@
         <h3>Granyn — Akıllı Bütçe ve Harcama Takibi</h3>
         <p>Türkçe finans uygulaması. Fiş tarama, otomatik kategori, hedefler ve analitik panellerle bütçeni kontrol altına al. Verilerin cihazında kalır.</p>
         <div class="links">
-          <a href="./granyn-privacy.html">Gizlilik Politikası</a>
-          <a href="./granyn-terms.html">Kullanım Şartları</a>
+        <a href="./granyn-privacy.html">Gizlilik Politikası</a>
+        <a href="./granyn-terms.html">Kullanım Şartları</a>
         </div>
       </div>
 
@@ -117,7 +246,7 @@
         <h3>Verdyn</h3>
         <p>Üretkenlik ve günlük takip uygulaması.</p>
         <div class="links">
-          <a href="./verdyn-privacy.html">Gizlilik Politikası</a>
+        <a href="./verdyn-privacy.html">Gizlilik Politikası</a>
         </div>
       </div>
 
@@ -125,7 +254,7 @@
         <h3>stocky — Akıllı Kiler ve Beslenme Asistanı</h3>
         <p>Türkiye'ye özel akıllı ev envanteri. Barkod tarayıp ürünleri puanla, ne zaman biteceğini öngör, beslenme ve sağlığını takip et. Kişisel verilerin cihazında kalır.</p>
         <div class="links">
-          <a href="./stocky-privacy.html">Gizlilik Politikası</a>
+        <a href="./stocky-privacy.html">Gizlilik Politikası</a>
         </div>
       </div>
     </section>
@@ -135,5 +264,309 @@
       <p style="margin-top: 8px;">© 2026 MFK Apps Studio</p>
     </footer>
   </div>
+</div>
+
+<div id="es" class="lang-section">
+  <div class="wrap">
+    <header>
+      <div class="logo">M</div>
+      <h1>MFK Apps Studio</h1>
+      <p class="tagline">Estudio independiente de aplicaciones móviles</p>
+    </header>
+
+    <section>
+      <h2>Nuestras aplicaciones</h2>
+
+      <div class="app-card">
+        <h3>Leaflet — Cuidado de Plantas con Calma</h3>
+        <p>Una app de cuidado de plantas serena y centrada en la privacidad. Añade tus plantas, define los intervalos de riego y abono, recibe recordatorios justo a tiempo y guarda notas y fotos. Sin cuenta: todos los datos de tus plantas permanecen en tu dispositivo.</p>
+        <div class="links">
+        <a href="./leaflet-privacy.html">Política de Privacidad</a>
+        <a href="./leaflet-terms.html">Términos de Servicio</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Word Lounge — Aprendizaje Multilingüe de Vocabulario y Gramática</h3>
+        <p>Aprende vocabulario y gramática en turco, inglés, alemán, español, francés y ruso. Tarjetas, cuestionarios, pruebas de gramática, juegos, comprensión auditiva y retos con amigos. La mayoría de las funciones trabajan sin conexión y tus datos permanecen en tu dispositivo.</p>
+        <div class="links">
+        <a href="./wordlounge-privacy.html">Política de Privacidad</a>
+        <a href="./wordlounge-terms.html">Términos de Servicio</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Mintly — Temporizador Pomodoro Sereno</h3>
+        <p>Un temporizador Pomodoro sereno y una app de rituales diarios para quienes quieren concentrarse sin la estética del «hustle». Sin presión de rachas, sin servidores. En iOS y Android, tus datos permanecen totalmente en tu dispositivo.</p>
+        <div class="links">
+        <a href="./mintly-privacy.html">Política de Privacidad</a>
+        <a href="./mintly-terms.html">Términos de Servicio</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>OldSchool — Recordatorio de Medicamentos y Suplementos</h3>
+        <p>Un sencillo recordatorio de medicamentos y suplementos. Notificaciones fiables a las horas de cada dosis, historial de dosis y fotos opcionales de los medicamentos. Todos tus datos de salud permanecen solo en tu dispositivo, sin cuenta.</p>
+        <div class="links">
+        <a href="./oldschool-privacy.html">Política de Privacidad</a>
+        <a href="./oldschool-terms.html">Términos de Servicio</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Subly — Seguimiento de Suscripciones</h3>
+        <p>Un gestor de suscripciones centrado en la privacidad. Apunta la cámara a una factura y los datos de la suscripción se rellenan automáticamente: sin vincular el banco y con múltiples divisas. Tus datos permanecen en tu dispositivo.</p>
+        <div class="links">
+        <a href="./subly-privacy.html">Política de Privacidad</a>
+        <a href="./subly-terms.html">Términos de Servicio</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Hydrame — Seguimiento Inteligente del Agua</h3>
+        <p>Una app de seguimiento del agua basada en la ciencia, con programación inteligente y centrada en la privacidad. Puntuación de hidratación clara, recordatorios inteligentes y una interfaz líquida animada. Tus datos permanecen en tu dispositivo.</p>
+        <div class="links">
+        <a href="./hydrame-privacy.html">Política de Privacidad</a>
+        <a href="./hydrame-terms.html">Términos de Servicio</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Granyn — Presupuesto y Gastos Inteligentes</h3>
+        <p>Una app de finanzas personales. Controla tu presupuesto con escaneo de recibos, categorías automáticas, objetivos y paneles analíticos. Tus datos permanecen en tu dispositivo.</p>
+        <div class="links">
+        <a href="./granyn-privacy.html">Política de Privacidad</a>
+        <a href="./granyn-terms.html">Términos de Servicio</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Verdyn</h3>
+        <p>Una app de productividad y seguimiento diario.</p>
+        <div class="links">
+        <a href="./verdyn-privacy.html">Política de Privacidad</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>stocky — Despensa Inteligente y Asistente de Nutrición</h3>
+        <p>Un inventario inteligente del hogar diseñado para Turquía. Escanea códigos de barras para puntuar productos, prevé cuándo se acabarán y controla tu nutrición y salud. Tus datos personales permanecen en tu dispositivo.</p>
+        <div class="links">
+        <a href="./stocky-privacy.html">Política de Privacidad</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Contacto: <a href="mailto:appsmfk@gmail.com">appsmfk@gmail.com</a></p>
+      <p style="margin-top: 8px;">© 2026 MFK Apps Studio</p>
+    </footer>
+  </div>
+</div>
+
+<div id="de" class="lang-section">
+  <div class="wrap">
+    <header>
+      <div class="logo">M</div>
+      <h1>MFK Apps Studio</h1>
+      <p class="tagline">Unabhängiges Studio für mobile Apps</p>
+    </header>
+
+    <section>
+      <h2>Unsere Apps</h2>
+
+      <div class="app-card">
+        <h3>Leaflet — Ruhige Pflanzenpflege</h3>
+        <p>Eine datenschutzorientierte, ruhige App zur Pflanzenpflege. Füge deine Pflanzen hinzu, lege Gieß- und Düngeintervalle fest, erhalte Erinnerungen pünktlich und speichere Notizen und Fotos. Kein Konto – alle deine Pflanzendaten bleiben auf deinem Gerät.</p>
+        <div class="links">
+        <a href="./leaflet-privacy.html">Datenschutzrichtlinie</a>
+        <a href="./leaflet-terms.html">Nutzungsbedingungen</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Word Lounge — Mehrsprachiges Vokabel- und Grammatiklernen</h3>
+        <p>Lerne Vokabeln und Grammatik in Türkisch, Englisch, Deutsch, Spanisch, Französisch und Russisch. Karteikarten, Quizze, Grammatiktests, Spiele, Hörübungen und Duelle mit Freunden. Die meisten Funktionen arbeiten offline und deine Daten bleiben auf deinem Gerät.</p>
+        <div class="links">
+        <a href="./wordlounge-privacy.html">Datenschutzrichtlinie</a>
+        <a href="./wordlounge-terms.html">Nutzungsbedingungen</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Mintly — Ruhiger Pomodoro-Timer</h3>
+        <p>Ein ruhiger Pomodoro-Timer und eine App für tägliche Rituale – für alle, die sich ohne Hustle-Ästhetik konzentrieren möchten. Kein Streak-Druck, keine Server. Auf iOS und Android bleiben deine Daten vollständig auf deinem Gerät.</p>
+        <div class="links">
+        <a href="./mintly-privacy.html">Datenschutzrichtlinie</a>
+        <a href="./mintly-terms.html">Nutzungsbedingungen</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>OldSchool — Erinnerung für Medikamente und Nahrungsergänzung</h3>
+        <p>Eine einfache Erinnerung für Medikamente und Nahrungsergänzung. Zuverlässige Benachrichtigungen zu den Einnahmezeiten, Dosis-Verlauf und optionale Medikamentenfotos. Alle deine Gesundheitsdaten bleiben nur auf deinem Gerät – kein Konto.</p>
+        <div class="links">
+        <a href="./oldschool-privacy.html">Datenschutzrichtlinie</a>
+        <a href="./oldschool-terms.html">Nutzungsbedingungen</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Subly — Abo-Verwaltung</h3>
+        <p>Ein datenschutzorientierter Abo-Tracker. Richte die Kamera auf eine Rechnung und die Abo-Daten werden automatisch übernommen – ohne Bankverknüpfung, mit mehreren Währungen. Deine Daten bleiben auf deinem Gerät.</p>
+        <div class="links">
+        <a href="./subly-privacy.html">Datenschutzrichtlinie</a>
+        <a href="./subly-terms.html">Nutzungsbedingungen</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Hydrame — Intelligentes Wasser-Tracking</h3>
+        <p>Eine wissenschaftlich fundierte, intelligent geplante und datenschutzorientierte App zum Wasser-Tracking. Ein klarer Hydrations-Score, smarte Erinnerungen und eine animierte Flüssigkeits-Oberfläche. Deine Daten bleiben auf deinem Gerät.</p>
+        <div class="links">
+        <a href="./hydrame-privacy.html">Datenschutzrichtlinie</a>
+        <a href="./hydrame-terms.html">Nutzungsbedingungen</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Granyn — Intelligente Budget- und Ausgabenverwaltung</h3>
+        <p>Eine App für persönliche Finanzen. Behalte dein Budget im Griff – mit Belegscan, automatischen Kategorien, Zielen und Analyse-Dashboards. Deine Daten bleiben auf deinem Gerät.</p>
+        <div class="links">
+        <a href="./granyn-privacy.html">Datenschutzrichtlinie</a>
+        <a href="./granyn-terms.html">Nutzungsbedingungen</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Verdyn</h3>
+        <p>Eine App für Produktivität und tägliches Tracking.</p>
+        <div class="links">
+        <a href="./verdyn-privacy.html">Datenschutzrichtlinie</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>stocky — Intelligenter Vorrats- und Ernährungsassistent</h3>
+        <p>Ein intelligentes Haushaltsinventar, entwickelt für die Türkei. Scanne Barcodes, um Produkte zu bewerten, sage voraus, wann sie zur Neige gehen, und verfolge deine Ernährung und Gesundheit. Deine persönlichen Daten bleiben auf deinem Gerät.</p>
+        <div class="links">
+        <a href="./stocky-privacy.html">Datenschutzrichtlinie</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Kontakt: <a href="mailto:appsmfk@gmail.com">appsmfk@gmail.com</a></p>
+      <p style="margin-top: 8px;">© 2026 MFK Apps Studio</p>
+    </footer>
+  </div>
+</div>
+
+<div id="fr" class="lang-section">
+  <div class="wrap">
+    <header>
+      <div class="logo">M</div>
+      <h1>MFK Apps Studio</h1>
+      <p class="tagline">Studio indépendant d'applications mobiles</p>
+    </header>
+
+    <section>
+      <h2>Nos applications</h2>
+
+      <div class="app-card">
+        <h3>Leaflet — Soin des plantes en toute sérénité</h3>
+        <p>Une application de soin des plantes apaisante et respectueuse de la vie privée. Ajoute tes plantes, définis les intervalles d'arrosage et de fertilisation, reçois des rappels au bon moment et conserve notes et photos. Sans compte : toutes les données de tes plantes restent sur ton appareil.</p>
+        <div class="links">
+        <a href="./leaflet-privacy.html">Politique de confidentialité</a>
+        <a href="./leaflet-terms.html">Conditions d'utilisation</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Word Lounge — Apprentissage multilingue du vocabulaire et de la grammaire</h3>
+        <p>Apprends le vocabulaire et la grammaire en turc, anglais, allemand, espagnol, français et russe. Cartes mémoire, quiz, tests de grammaire, jeux, écoute et défis entre amis. La plupart des fonctions marchent hors ligne et tes données restent sur ton appareil.</p>
+        <div class="links">
+        <a href="./wordlounge-privacy.html">Politique de confidentialité</a>
+        <a href="./wordlounge-terms.html">Conditions d'utilisation</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Mintly — Minuteur Pomodoro apaisant</h3>
+        <p>Un minuteur Pomodoro apaisant et une app de rituels quotidiens pour ceux qui veulent se concentrer sans l'esthétique du « hustle ». Aucune pression de séries, aucun serveur. Sur iOS et Android, tes données restent entièrement sur ton appareil.</p>
+        <div class="links">
+        <a href="./mintly-privacy.html">Politique de confidentialité</a>
+        <a href="./mintly-terms.html">Conditions d'utilisation</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>OldSchool — Rappel de médicaments et compléments</h3>
+        <p>Un rappel simple de médicaments et de compléments. Des notifications fiables aux heures de prise, l'historique des doses et des photos de médicaments en option. Toutes tes données de santé restent uniquement sur ton appareil, sans compte.</p>
+        <div class="links">
+        <a href="./oldschool-privacy.html">Politique de confidentialité</a>
+        <a href="./oldschool-terms.html">Conditions d'utilisation</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Subly — Suivi des abonnements</h3>
+        <p>Un suivi d'abonnements respectueux de la vie privée. Pointe ta caméra sur une facture et les détails de l'abonnement sont remplis automatiquement — sans lier de banque, multidevise. Tes données restent sur ton appareil.</p>
+        <div class="links">
+        <a href="./subly-privacy.html">Politique de confidentialité</a>
+        <a href="./subly-terms.html">Conditions d'utilisation</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Hydrame — Suivi intelligent de l'hydratation</h3>
+        <p>Une application de suivi de l'hydratation fondée sur la science, à la planification intelligente et respectueuse de la vie privée. Un score d'hydratation clair, des rappels intelligents et une interface fluide animée. Tes données restent sur ton appareil.</p>
+        <div class="links">
+        <a href="./hydrame-privacy.html">Politique de confidentialité</a>
+        <a href="./hydrame-terms.html">Conditions d'utilisation</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Granyn — Budget et dépenses intelligents</h3>
+        <p>Une app de finances personnelles. Maîtrise ton budget grâce au scan de reçus, aux catégories automatiques, aux objectifs et aux tableaux de bord analytiques. Tes données restent sur ton appareil.</p>
+        <div class="links">
+        <a href="./granyn-privacy.html">Politique de confidentialité</a>
+        <a href="./granyn-terms.html">Conditions d'utilisation</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>Verdyn</h3>
+        <p>Une application de productivité et de suivi quotidien.</p>
+        <div class="links">
+        <a href="./verdyn-privacy.html">Politique de confidentialité</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <h3>stocky — Garde-manger intelligent et assistant nutrition</h3>
+        <p>Un inventaire domestique intelligent conçu pour la Turquie. Scanne les codes-barres pour noter les produits, anticipe quand ils seront épuisés et suis ta nutrition et ta santé. Tes données personnelles restent sur ton appareil.</p>
+        <div class="links">
+        <a href="./stocky-privacy.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Contact : <a href="mailto:appsmfk@gmail.com">appsmfk@gmail.com</a></p>
+      <p style="margin-top: 8px;">© 2026 MFK Apps Studio</p>
+    </footer>
+  </div>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(function (s) { s.classList.remove('active'); });
+    document.getElementById(lang).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+</script>
+
 </body>
 </html>
